@@ -3,10 +3,12 @@ import https from "https";
 import fs from "fs";
 
 import users from "./routes/users";
+import seed from "./routes/seed";
 
 const app = express();
 app.use(express.json());
 app.use("/users", users);
+app.use("/seed", seed);
 
 const port = process.env.PORT || 3000;
 
