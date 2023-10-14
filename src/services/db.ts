@@ -28,7 +28,7 @@ export function getDbPool() {
       /**
        * The maximum number of connections to create at once.
        */
-      connectionLimit: 100,
+      connectionLimit: 1000,
       /**
        * The maximum number of idle connections. (Default: same as connectionLimit)
        */
